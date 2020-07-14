@@ -4,5 +4,5 @@ import com.testapp.model.Test;
 
 public interface TestService {
 	public Test getNewTest();
-	public int submitTest(Test test);
+	public int computeResult(Test test);
 }

@@ -1,0 +1,12 @@
+<div align="center">
+    <table>
+        <tr>
+            <th>Attempts</th>
+            <th>Score Obtained</th>
+        </tr>
+        <tr *ngFor="let result of results; let i = index">
+            <td>Attempt {{i+1}}</td>
+            <td>{{result}}/5</td>
+        </tr>
+    </table>
+</div>

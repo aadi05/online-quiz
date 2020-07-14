@@ -27,8 +27,16 @@ public class TestServiceImpl implements TestService{
 	}
 
 	@Override
-	public int submitTest(Test test) {
-		return 0;
+	public int computeResult(Test test) {
+		int total = 0;
+		for(QuestionAnswer question:test.getQuiz()) {
+			QuestionAnswer questiondb = dao.findById(question.getQuestionId()).get();
+			if(questiondb.getAns() == question.getAns()) {
+				total += 1;
+			}
+		}
+		System.out.println(total);
+		return total;
 	}
 
 }

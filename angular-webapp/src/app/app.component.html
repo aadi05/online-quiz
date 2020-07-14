@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+  <head>
+    <title>Angular Test App</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Angular web app for online astronomy quiz">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Aditya Bhogate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <div align="center">
+  <h1>{{title}}</h1>
+</div>
+<br />
+<br />
+<div align="center">
+<ul>
+  <li>
+    <a routerLink="/test"><span>New test</span></a>
+  </li>
+  <li>
+    <a routerLink="/review"><span>Review</span></a>
+  </li>
+  <li>
+    <a routerLink="/results"><span>Results</span></a>
+  </li>
+</ul>
+</div>
+<br/>
+<br/>
+<div align="center">
+<router-outlet></router-outlet>
+</div>
+</body>

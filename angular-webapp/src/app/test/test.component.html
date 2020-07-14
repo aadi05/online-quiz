@@ -1,0 +1,15 @@
+<body>
+<form>
+<div align="center" bgcolor="white" class="leftAlign" *ngFor="let questionans of questionAnswerList; let i = index">
+    <h3>{{questionans.question}}</h3>
+    <br>
+    <input type="radio" [name]='"option"+i' value="1" [(ngModel)]="questionans.ans" required="required">{{questionans.option1}}
+    <input type="radio" [name]='"option"+i' value="3" [(ngModel)]="questionans.ans">{{questionans.option3}}
+    <input type="radio" [name]='"option"+i' value="4" [(ngModel)]="questionans.ans">{{questionans.option4}}
+    <input type="radio" [name]='"option"+i' value="2" [(ngModel)]="questionans.ans">{{questionans.option2}}
+</div>
+<div>
+    <input class="button" type="submit" id="radioValidate" value="Submit Test" (click)="submitTest()">
+</div>
+</form>
+</body>
