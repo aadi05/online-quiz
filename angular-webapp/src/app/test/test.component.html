@@ -1,6 +1,6 @@
 <body>
 <form>
-<div align="center" bgcolor="white" class="leftAlign" *ngFor="let questionans of questionAnswerList; let i = index">
+<div align="center" class="leftAlign" *ngFor="let questionans of questionAnswerList; let i = index">
     <h3>{{questionans.question}}</h3>
     <br>
     <input type="radio" [name]='"option"+i' value="1" [(ngModel)]="questionans.ans" required="required">{{questionans.option1}}

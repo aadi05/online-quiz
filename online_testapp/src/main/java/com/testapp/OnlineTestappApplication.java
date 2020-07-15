@@ -31,7 +31,7 @@ class InitialRecords implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 		List<QuestionAnswer> list = new ArrayList<>();
-		QuestionAnswer qa1 = new QuestionAnswer("What is the name our galaxy?","Andromeda", "Milky way", "Whirlpool","Messier 81", 2);
+		QuestionAnswer qa1 = new QuestionAnswer("What is the name of our galaxy?","Andromeda", "Milky way", "Whirlpool","Messier 81", 2);
 		QuestionAnswer qa2 = new QuestionAnswer("On what planet will you find the largest volcano in the solar system?","Earth", "Jupiter", "Uranus","Mars", 4);
 		QuestionAnswer qa3 = new QuestionAnswer("What does a light year measure?","Time", "Distance", "Brightness","Force", 2);
 		QuestionAnswer qa4 = new QuestionAnswer("Sun will absorb/engulf earth in how many years?","400 million years","2 billion years","7.5 billion years","Tomorrow morning",3);
